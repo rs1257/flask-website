@@ -1,0 +1,11 @@
+<header>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+<nav id="nav-bar">
+  <ul id="nav-list">
+    <li class="nav-item {{ home_active }}"><a href="/">Home</a></li>
+    <li class="nav-item {{ projects_active }}"><a href="projects">Projects</a></li>
+    <li class="nav-item {{ cv_active }}"><a href="cv">CV</a></li>
+  </ul>
+</nav>
+</header>
+

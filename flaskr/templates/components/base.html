@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Flask</title>
+  </head>  
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+  <body>
+    {% include "components/header.html" %}
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+    {% include "components/footer.html" %}
+  </body>
+</html>

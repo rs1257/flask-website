@@ -1,0 +1,32 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  background-color: #2979ff;
+  float: left;
+  width: calc((100% - 4px) / 3); /* Second number needs to be same as navbar items */
+}
+
+li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+li:not(.active) a:hover {
+  background-color: #d500f9;
+}
+
+.active {
+  background-color: #00c853;
+}
+
+ul > li + li {
+  border-left: #ffffff solid 2px;
+}
